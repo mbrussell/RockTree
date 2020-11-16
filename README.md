@@ -1,2 +1,2 @@
 # RockTree
-Code for analysis of the Rockefeller Christmas tree.
+Code for analysis of the Rockefeller Center Christmas Tree data.
