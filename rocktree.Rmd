@@ -1,0 +1,172 @@
+---
+title: "RockTree"
+author: "Matt Russell"
+date: "11/16/2020"
+output: html_document
+---
+Load libraries:
+
+```{r echo = F, warning = FALSE, message = FALSE}
+library(tidyverse)
+library(maps)
+library(geosphere)
+library(ggrepel)
+```
+
+Load data:
+
+```{r echo = F, warning = FALSE, message = FALSE}
+tree <- read_csv('rocktree.csv')
+```
+
+Sort by number of species:
+
+```{r echo = F, warning = FALSE, message = FALSE}
+tree %>% 
+  group_by(Species) %>% 
+  summarize(num = n()) %>% 
+  arrange(desc(num))
+```
+
+Graph height of tree over time:
+
+```{r echo = F, warning = FALSE, message = FALSE}
+tree_2000 <- tree %>% 
+  filter(Year >= 2000) %>% 
+  summarize(mean_ht = mean(Height_ft))
+            
+ggplot(tree, aes(Year, Height_ft)) +
+  geom_point() +
+  stat_smooth(method = "lm") +
+  labs(y = "Height of Rockefeller tree (feet)") +
+  theme_bw()
+```
+
+Graph mean height of tree by state: 
+
+```{r echo = F, warning = FALSE, message = FALSE}
+tree %>% 
+  group_by(OriginState) %>% 
+  summarize(num = n(),
+            mean_ht = mean(Height_ft, na.rm = T)) %>% 
+  arrange(desc(mean_ht)) %>% 
+  filter(num >2 & !is.na(OriginState)) %>%
+  ggplot(aes(x = reorder(OriginState, mean_ht), y = mean_ht)) +
+  geom_bar(stat = "identity", fill = "lightgreen", col = "black") +
+  coord_flip()+
+  labs(y = "Mean height of Rockefeller tree (feet)", x = "State") +
+  theme_bw()
+```
+
+Make state and county data sets:
+
+```{r}
+states <- map_data("state")
+
+tree_states <- subset(states, region %in% c("connecticut", "pennsylvania", "new york", 
+                                            "ohio", "new jersey", "vermont", 
+                                            "massachusetts","new hampshire"))
+counties <- map_data("county")
+tree_counties <- subset(counties,  region %in% c("connecticut", "pennsylvania", "new york", 
+                                            "ohio", "new jersey", "vermont", 
+                                            "massachusetts", "new hampshire"))
+```
+
+Map states:
+
+```{r}
+state_map <- ggplot(data = tree_states, mapping = aes(x = long, y = lat, group = group)) + 
+  geom_polygon(color = "black", fill = "white") +
+  coord_map("conic", lat0 = 40) +
+  theme_bw()
+state_map
+```
+
+Map counties:
+
+```{r}
+county_map <- ggplot(data = tree_states, mapping = aes(x = long, y = lat, group = group)) + 
+  geom_polygon(data = tree_counties, fill = NA, color = "gray") +
+  geom_polygon(color = "black", fill = NA) +
+  coord_map("conic", lat0 = 40) +
+  theme_bw()
+county_map
+```
+
+Map states with Rock Center:
+
+```{r}
+rock_map <- ggplot(data = tree_states, mapping = aes(x = long, y = lat, group = group)) + 
+  geom_polygon(color = "black", fill = "white") +
+  geom_point(aes(y=40.759358, x=-73.978502), color = "darkgreen", size = 5) +
+  coord_map("conic", lat0 = 40) +
+  theme_bw()
+rock_map
+```
+
+Map states with Rock Center and locations of where Rockefeller trees came from:
+
+```{r}
+rock_map2 <- ggplot(data = tree_states, 
+                      mapping = aes(x = long, y = lat, group = group)) + 
+  geom_polygon(color = "black", fill = "white") +
+  geom_point(data = tree, aes(x = OriginLong, y = OriginLat), 
+             color = "red", size = 2, inherit.aes = F) +
+  geom_point(aes(y=40.759358, x=-73.978502), 
+             color = "darkgreen", size = 5) +
+  coord_map("conic", lat0 = 40) +
+  theme_bw()
+rock_map2
+```
+
+
+Calculate distance to Rock Center:
+
+```{r}
+tree <- tree %>% 
+  mutate(LatRock = 40.759358,
+         LongRock = -73.978502,
+         dist_to_rock_m = distHaversine(cbind(OriginLong, OriginLat), 
+                              cbind(LongRock, LatRock)),
+         dist_to_rock_miles = dist_to_rock_m * 0.000621371)
+```
+
+Make a violin plot showing the Distance to Rockefeller Center (miles):
+
+```{r}
+rock_box <- ggplot(data = tree, aes(x = dist_to_rock_miles, y = 1)) + 
+  geom_violin() +
+  theme_bw()+
+  xlab("Distance to Rockefeller Center (miles)")+
+  theme(axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.title.y = element_blank())
+rock_box
+```
+
+Filter data to get close/far trees:
+
+```{r}
+tree_loc <- tree %>% 
+  filter(OriginCity %in% c("Wayne, NJ", "Richfield, OH", "Rockefeller Center") & Year %in% c(1998, 2005, NA)) 
+  
+```
+
+Map closest and farthest trees and label them:
+
+```{r}
+county_map2 <- ggplot(data = tree_states, 
+                      mapping = aes(x = long, y = lat, group = group)) + 
+  geom_polygon(color = "black", fill = "white") +
+  geom_point(data = tree_loc, aes(x = OriginLong, y = OriginLat), 
+             color = "red", size = 2, inherit.aes = F) +
+    geom_point(aes(y=40.759358, x=-73.978502), 
+             color = "darkgreen", size = 5) +
+  geom_text_repel(data = tree_loc, aes(x = OriginLong, y = OriginLat, label = OriginCity), 
+        fontface = "bold", nudge_y = -1, nudge_x = -2,
+        inherit.aes = F) +
+    coord_map("conic", lat0 = 40) +
+  theme_bw()
+county_map2
+```
+
