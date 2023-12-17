@@ -1,76 +1,93 @@
 Year,OriginCity,OriginState,OriginLat,OriginLong,Species,Height_ft,LightingDate
-1933,,,,,Balsam fir,50,
-1936,"Morristown, NJ",NJ,40.796768,-74.481544,,70,
-1942,"Huntington, NY",NY,40.87121,-73.4263,,50,
-1949,,,,,,75,
-1950,,,,,,,
-1951,"Lake Ronkonkoma, NY",NY,40.8328,-73.10937,,82,
-1955,"Belvedere, NJ",NJ,40.65872,-74.38686,,65,
-1957,"Brighton, VT",VT,44.80171,-71.84332,White spruce,67,
-1958,,,,,,,
-1959,,,,,,,
-1960,"Harford, PA",PA,41.78370691,-75.70166256,,,
-1961,"Smithtown, NY",NY,40.8494984,-73.2272457,,85,
-1962,,,,,White spruce,67,
-1963,"Rockaway, NJ",NJ,40.89982506,-74.51801904,"Bruce Fir, Veit",84,
-1964,,,,,,,
-1965,,,,,,,
-1966,,,,,,,
-1967,,,,,,,
-1968,,,,,,,
-1969,,,,,,,
-1970,,,,,,,
 1971,"East Montpelier, VT",VT,44.29167362,-72.54396301,Balsam fir,65,
-1972,,,,,,,
-1973,,,,,,,
-1974,,,,,,,
-1975,,,,,,,
-1976,,,,,,,
-1977,,,,,,,
-1978,"Mahwah, NJ",NJ,41.07206748,-74.17533533,Norway spruce,75,
-1979,,,,,,,
-1980,"Mahwah, NJ",NJ,41.07206748,-74.17533533,Norway spruce,70,8-Dec-80
-1981,,,,,White spruce,65,7-Dec-81
-1982,,,,,Norway spruce,,6-Dec-82
-1983,,,,,Tree-ton spruce,75,5-Dec-83
-1984,,,,,Norway spruce,,3-Dec-84
-1985,"Harveyville, PA",PA,41.21998921,-76.24763616,Norway spruce,70,9-Dec-85
-1986,"Nanuet, NY",NY,41.10419744,-74.02198312,Norway spruce,68,1-Dec-86
-1987,,,,,Norway spruce,79,1-Dec-87
-1988,,,,,Norway spruce,,
-1989,"Montebello, NY",NY,41.13444305,-74.11805066,Norway spruce,70,
-1990,,,,,Norway spruce,,
-1991,,,,,Norway spruce,,3-Dec-91
-1992,"Stony Point, NY",NY,41.22577455,-73.98224675,Norway spruce,65,
-1993,,,,,Norway spruce,,
-1994,"Ridgefield, CT",CT,41.30993219,-73.50707586,Norway spruce,85,2-Dec-94
-1995,"Mendham Borough, NJ",NJ,40.7717367,-74.60421804,Norway spruce,75,5-Dec-95
-1996,"Armonk, NY",NY,41.13335837,-73.71366998,Norway spruce,90,3-Dec-96
-1997,"Stony Point, NY",NY,41.22577455,-73.98224675,Norway spruce,70,2-Dec-97
-1998,"Richfield, OH",OH,41.24532949,-81.64147261,Norway spruce,75,2-Dec-98
-1999,"Killingworth, CT",CT,41.38260544,-72.57401852,Norway spruce,100,1-Dec-99
-2000,"Buchanan, NY",NY,41.26456015,-73.94240167,Norway spruce,80,29-Nov-00
-2001,"Wayne, NJ",NJ,40.95155747,-74.24820214,Norway spruce,81,28-Nov-01
-2002,"Bloomsbury, NJ",NJ,40.6557671,-75.07645121,Norway spruce,76,4-Dec-02
-2003,"Manchester, CT",CT,41.78777956,-72.51539358,Norway spruce,79,3-Dec-03
-2004,"Suffern, NY",NY,41.11684588,-74.14176498,Norway spruce,71,30-Nov-04
-2005,"Wayne, NJ",NJ,40.95155747,-74.24820214,Norway spruce,74,30-Nov-05
-2006,"Ridgefield, CT",CT,41.30993219,-73.50707586,Norway spruce,88,29-Nov-06
-2007,"Shelton, CT",CT,41.31949262,-73.1487161,Norway spruce,84,28-Nov-07
-2008,"Hamilton Township, NJ",NJ,40.22168003,-74.67271204,Norway spruce,72,3-Dec-08
-2009,"Easton, CT",CT,41.26014532,-73.30881918,Norway spruce,76,2-Dec-09
-2010,"Mahopac, NY",NY,41.36634885,-73.73264092,Norway spruce,74,30-Nov-10
-2011,"Mifflinville, PA",PA,41.03267196,-76.29458399,Norway spruce,74,30-Nov-11
-2012,"Flanders, NJ",NJ,40.84867353,-74.72340759,Norway spruce,80,28-Nov-12
-2013,"Shelton, CT",CT,41.32078185,-73.1336099,Norway spruce,76,4-Dec-13
-2014,"Danville, PA",PA,40.96795663,-76.61548573,Norway spruce,85,3-Dec-14
-2015,"Gardiner, NY",NY,41.68533288,-74.1495294,Norway spruce,78,2-Dec-15
-2016,"Oneonta, NY",NY,42.45713903,-75.07469517,Norway spruce,94,30-Nov-16
-2017,"State College, PA",PA,40.7968465,-77.85411697,Norway spruce,75,29-Nov-17
-2018,"Wallkill, NY",NY,41.60967858,-74.17185518,Norway spruce,72,28-Nov-18
-2019,"Florida, NY",NY,41.33531745,-74.35293833,Norway spruce,77,4-Dec-19
-2020,"Oneonta, NY",NY,42.45713903,-75.07469517,Norway spruce,75,2-Dec-20
-2021,"Elkton, MD",MD,39.60489437,-75.83699744,Norway spruce,79,1-Dec-21
 2022,"Queensbury, NY",NY,43.34015368,-73.69911624,Norway spruce,82,30-Nov-22
+2016,"Oneonta, NY",NY,42.45713903,-75.07469517,Norway spruce,94,30-Nov-16
+2020,"Oneonta, NY",NY,42.45713903,-75.07469517,Norway spruce,75,2-Dec-20
 2023,"Vestal, NY",NY,42.07558087,-76.06383733,Norway spruce,80,29-Nov-23
+2003,"Manchester, CT",CT,41.78777956,-72.51539358,Norway spruce,79,3-Dec-03
+1960,"Harford, PA",PA,41.78370691,-75.70166256,Norway spruce,80,
+2015,"Gardiner, NY",NY,41.68533288,-74.1495294,Norway spruce,78,2-Dec-15
+2018,"Wallkill, NY",NY,41.60967858,-74.17185518,Norway spruce,72,28-Nov-18
+1999,"Killingworth, CT",CT,41.38260544,-72.57401852,Norway spruce,100,1-Dec-99
+2010,"Mahopac, NY",NY,41.36634885,-73.73264092,Norway spruce,74,30-Nov-10
+2019,"Florida, NY",NY,41.33531745,-74.35293833,Norway spruce,77,4-Dec-19
+2013,"Shelton, CT",CT,41.32078185,-73.1336099,Norway spruce,76,4-Dec-13
+2007,"Shelton, CT",CT,41.31949262,-73.1487161,Norway spruce,84,28-Nov-07
+1994,"Ridgefield, CT",CT,41.30993219,-73.50707586,Norway spruce,85,2-Dec-94
+2006,"Ridgefield, CT",CT,41.30993219,-73.50707586,Norway spruce,88,29-Nov-06
+2000,"Buchanan, NY",NY,41.26456015,-73.94240167,Norway spruce,80,29-Nov-00
+2009,"Easton, CT",CT,41.26014532,-73.30881918,Norway spruce,76,2-Dec-09
+1998,"Richfield, OH",OH,41.24532949,-81.64147261,Norway spruce,75,2-Dec-98
+1992,"Stony Point, NY",NY,41.22577455,-73.98224675,Norway spruce,65,
+1997,"Stony Point, NY",NY,41.22577455,-73.98224675,Norway spruce,70,2-Dec-97
+1985,"Harveyville, PA",PA,41.21998921,-76.24763616,Norway spruce,70,9-Dec-85
+1989,"Montebello, NY",NY,41.13444305,-74.11805066,Norway spruce,70,
+1996,"Armonk, NY",NY,41.13335837,-73.71366998,Norway spruce,90,3-Dec-96
+2004,"Suffern, NY",NY,41.11684588,-74.14176498,Norway spruce,71,30-Nov-04
+1986,"Nanuet, NY",NY,41.10419744,-74.02198312,Norway spruce,68,1-Dec-86
+1978,"Mahwah, NJ",NJ,41.07206748,-74.17533533,Norway spruce,75,
+1980,"Mahwah, NJ",NJ,41.07206748,-74.17533533,Norway spruce,70,8-Dec-80
+2011,"Mifflinville, PA",PA,41.03267196,-76.29458399,Norway spruce,74,30-Nov-11
+2014,"Danville, PA",PA,40.96795663,-76.61548573,Norway spruce,85,3-Dec-14
+2001,"Wayne, NJ",NJ,40.95155747,-74.24820214,Norway spruce,81,28-Nov-01
+2005,"Wayne, NJ",NJ,40.95155747,-74.24820214,Norway spruce,74,30-Nov-05
+1942,"Huntington, NY",NY,40.87121,-73.4263,Norway spruce,50,
+1961,"Smithtown, NY",NY,40.8494984,-73.2272457,Norway spruce,85,
+2012,"Flanders, NJ",NJ,40.84867353,-74.72340759,Norway spruce,80,28-Nov-12
+1951,"Lake Ronkonkoma, NY",NY,40.8328,-73.10937,Norway spruce,82,
+2017,"State College, PA",PA,40.7968465,-77.85411697,Norway spruce,75,29-Nov-17
+1936,"Morristown, NJ",NJ,40.796768,-74.481544,Norway spruce,70,
+1995,"Mendham Borough, NJ",NJ,40.7717367,-74.60421804,Norway spruce,75,5-Dec-95
 ,Rockefeller Center,NY,40.75935783,-73.97850194,,,
+1954,"Belvedere, NJ",NJ,40.65872,-74.38686,Norway spruce,65,
+1955,"Belvedere, NJ",NJ,40.65872,-74.38686,Norway spruce,65,
+2002,"Bloomsbury, NJ",NJ,40.6557671,-75.07645121,Norway spruce,76,4-Dec-02
+2008,"Hamilton Township, NJ",NJ,40.22168003,-74.67271204,Norway spruce,72,3-Dec-08
+2021,"Elkton, MD",MD,39.60489437,-75.83699744,Norway spruce,79,1-Dec-21
+1931,,,,,Balsam fir,20,
+1933,,,,,Balsam fir,50,
+1934,"Babylon, NY",NY,40.70276089,-73.3554941,Norway spruce,70,30-Dec-34
+1935,,,,,Norway spruce,80,
+1937,"Smithfield, RI",RI,41.90759347,-71.50043727,Norway spruce,70,
+1938,,,,,Norway spruce,70,
+1939,,NJ,,,Norway spruce,75,
+1940,"Hyde Park, NY",NY,41.78208865,-73.92920715,Norway spruce,88,
+1941,,,,,Norway spruce,83,
+1944,,NY,,,Norway spruce,65,
+1945,"Syosset, NY",NY,40.81364772,-73.50573533,Norway spruce,55,
+1946,"Syosset, NY",NY,40.81364772,-73.50573533,Norway spruce,75,
+1947,"Deer Park, NY",NY,40.81364772,-73.50573533,Norway spruce,65,
+1948,"Mount Kisco, NY",NY,40.75683389,-73.3045331,Norway spruce,90,
+1949,"Yaphank, NY",NY,40.83890073,-72.91119383,Norway spruce,75,
+1950,"Mount Kisco, NY",NY,41.20886622,-73.72288016,Norway spruce,85,
+1952,"Allamuchy, NJ",NJ,40.92127606,-74.81352192,Norway spruce,85,
+1953,"Morristown, NJ",NJ,40.796768,-74.481544,Norway spruce,75,
+1956,"Dalton, NH",NH,44.39195025,-71.65156351,White spruce,64,
+1957,"Island Pond, VT",VT,44.80363507,-71.87773,White spruce,67,
+1958,"East Madison, ME",ME,44.84958239,-69.75344398,White spruce,64,
+1959,"East Brookfield, MA",MA,42.20916349,-72.03225718,Norway spruce,70,
+1962,"Greenville, ME",ME,45.45787022,-69.51585663,White spruce,67,
+1963,"Hurley, NY",NY,41.92418422,-74.05256221,Norway spruce,60,
+1964,"Lake Carmel, NY",NY,41.46707385,-73.65646956,Norway spruce,60,
+1965,"Darien, CT",CT,41.07934293,-73.45642673,Norway spruce,60,
+1966,"Ottatwa, ON",ON,45.40174359,-75.46654719,White spruce,64,
+1967,"Coventry, VT",VT,44.8841411,72.20564658,Balsam fir,65,
+1968,"Holland, VT",VT,44.9830853,-71.94417426,White spruce,60,
+1969,"Saranac Lake, NY",NY,44.33512091,-74.12558593,Balsam fir,70,
+1970,"Coventry, VT",VT,44.8841411,72.20564658,White spruce,60,
+1972,"Old Bridge, NJ",NJ,40.42539711,-74.26571643,Norway spruce,65,
+1973,"Tenafly, NJ",NJ,40.92094863,-73.94688691,Norway spruce,65,
+1974,"Lehighton, PA",PA,40.83029592,-75.71066377,Norway spruce,63,
+1975,"New Canaan, CT",CT,41.17866626,-73.48683709,Balsam fir,59,
+1976,"Montclair, NJ",NJ,40.84580045,-74.19668908,White spruce,65,
+1977,"Dixfield, ME",ME,44.56061334,-70.41136432,White spruce,65,
+1979,"Spring Valley, NY",NY,41.11760001,-74.04652535,Norway spruce,65,
+1981,"West Danville, VT",VT,44.40484134,-72.20869668,White spruce,65,7-Dec-81
+1982,"Mahwah, NJ",NJ,41.07206748,-74.17533533,Norway spruce,70,6-Dec-82
+1983,"Valley Cottage, NY",NY,41.12241241,-73.93302195,Norway spruce,75,5-Dec-83
+1984,"Far Hills, NJ",NJ,40.68185703,-74.61545184,Norway spruce,75,3-Dec-84
+1987,"Suffern, NY",NY,41.10865775,-74.13846291,Norway spruce,79,1-Dec-87
+1988,"Raritan Township, NJ",NJ,40.56756972,-74.63031647,Norway spruce,75,
+1990,"West Norwalk, CT",CT,41.11301152,-73.45233706,Norway spruce,75,
+1991,"Suffern, NY",NY,41.10865775,-74.13846291,Norway spruce,65,3-Dec-91
+1993,"Nanuet, NY",NY,41.09041678,-74.02253729,Norway spruce,85,
